@@ -20,9 +20,6 @@
 			top: 8px;
 			z-index: 5;
 			position: absolute;
-
-			/*display:none;*/
-			/*visibility:hidden;*/
 		}
 
 		#innerframe{
@@ -36,13 +33,11 @@
 			top: 230px;
 			z-index: 10;
 			color:#000;
-			/*display: inline-block;*/
 		}
 
 		#light{
 			position: absolute;
 			color: #000;
-			/*background-color: #FF0;*/
 			z-index: 15;
 			left: 540px ;
 			top: 350px;
@@ -55,14 +50,11 @@
 			border: 2px solid #000;
 			position: absolute;
 			background-color: #FFF;
-			/*margin-left: 460px ;
-			margin-top: 335px;*/
 			left: 580px ;
 			top: 360px;
 			padding-top: 5px;
 			padding-left: 5px;
 			z-index: 20;
-			/*display: inline-block;*/
 		}
 
 		#x{
@@ -95,9 +87,6 @@
 	<div id="x">X</div>
 			
 		
-		
-	
-
 	<script
   		src="https://code.jquery.com/jquery-3.4.1.min.js"
   		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -105,24 +94,17 @@
   	</script>
 
 	<script>
-		//$(".innerframe").css("background-color","#0FF");
 		$("#sframe").hide();
 		$("#innerframe").hide();
 		$("#light").hide();
 		$("#x").hide();
-		//$("#btn").show();
 		
-
 		$("#btn").click(function(){
-  			/*$("#innerframe").fadeIn(6000).css("background-color","#FF0").css("border-color","#fff");
-  			$("#frame").fadeIn(6000).css("background-color","#000");*/
   			$("#sframe").fadeIn(4000);
   			$("#innerframe").fadeIn(4000);
   			$("#light").fadeIn(4000);
   			$("#x").fadeIn(4000);
   			$("#btn").hide();
-  			//$("#innerframe").text("我是燈箱喔!");
-  			//$("#innerframe").fadeOut(6000);
 		});
 
 		$("#x").click(function(){
@@ -132,7 +114,6 @@
   			$("#light").fadeOut(4000);
   			$("#x").fadeOut(4000);
   			$("#btn").fadeIn(4000);
-  			//$("#innerframe").fadeOut(6000);
 		});
 	</script>
 </body>
