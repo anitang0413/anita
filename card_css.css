@@ -1,0 +1,242 @@
+.frame{
+	border: 0 solid #DDD;
+	border-radius: 10px 10px 10px 10px;
+	width: 300px;
+	height: 500px;
+	box-shadow: 2px 2px 10px #AAA;
+	margin: auto;
+	position: relative;
+}
+
+.line1{
+	border: 0 solid #DDD;
+	/*width: 300px;*/
+	height: 22px;
+	/*margin-top: 10px;*/
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.line1:active .selector{
+	display:block;
+}
+
+.arrow{
+	position: absolute;
+	margin-left: 10px;
+	padding-top: 4px;
+}
+
+.selector {
+	width: 100px;
+	text-align: center;
+	display:none;
+	position:absolute;
+	padding-top: 4px;
+	right: -80px;
+	z-index: 15;
+	background-color: #DDD;
+	font-size: 14px;
+	box-shadow: 2px 2px 10px #000;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.selector:hover {
+	display:block;
+	background-color:#DDD;
+}
+
+.selector span{
+	display:block;
+	margin-top: 10px;
+	line-height: 3px;
+}
+
+.heart{
+	position: absolute;
+	padding-top: 4px;
+	right: 23px;
+}
+
+.list{
+	position: absolute;
+	padding-top: 4px;
+	right: 10px;
+}
+
+.line2{
+	border: 0 solid #DDD;
+	/*width: 300px;*/
+	height: 330px;
+	background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(89,148,202,1) 62%,rgba(95,154,207,0.7) 68%,rgba(125,185,232,0) 100%);
+	position: relative;
+}
+
+.photo{
+	width: 120px;
+	height: 120px;
+	background-color: #DDD;
+	border-radius: 999em;
+	margin-top: 5px;
+	margin-left: 85px;
+	box-shadow: 2px 2px 10px #DDD;
+	background-image: url(./img/picachu.jpeg);
+	/*background-size: contain;*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+}
+
+.photo:hover{
+	background-image: url(./img/pikachu.jpeg);
+	box-shadow: 2px 2px 10px #0f0;
+}
+
+/*.pikachu{
+	width: 120px;
+	height: 120px;
+	border-radius: 999em;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}*/
+
+.check{
+	border: 0 solid #DDD;
+	width: 20px;
+	height: 20px;
+	margin-left: 180px;
+	margin-top: -100px ;
+}
+
+.nm{
+	margin-top: 30px;
+	text-align: center;
+	font-size: 26px;
+	/*英文擺前面，中文擺後面*/
+	font-family:"fantasy","微軟正黑體";
+	text-shadow: 2px 2px 5px #000;
+}
+
+.describ1{
+	text-align: center;
+	font-size: 16px;
+
+	/*英文擺前面，中文擺後面*/
+	font-family:"fantasy","微軟正黑體";
+	text-shadow: 2px 2px 5px #666;
+	color: #666;
+	position: relative;
+	margin-top: 80px ;
+}
+
+.describ2{
+	text-align: center;
+	font-size: 16px;
+
+	/*英文擺前面，中文擺後面*/
+	font-family:"fantasy","微軟正黑體";
+	text-shadow: 2px 2px 5px #444;
+	color: #444;
+}
+
+.hire{
+	background: linear-gradient(to bottom, rgba(44,83,158,1) 0%,rgba(44,83,158,1) 100%);
+	margin-top: 20px;
+	width: 100px;
+	height: 40px;
+	border-radius: 30px 30px 30px 30px;
+	color: #fff;
+	position: absolute;
+	top: 250px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+	line-height: 40px;
+	box-shadow: 2px 2px 5px grey;
+}
+
+.hire:hover{
+	font-size: 24px;
+}
+
+.line3{
+	border: 0 solid #DDD;
+	width: 300px;
+	height: 80px;
+	display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+}
+
+.line3>div{
+	width: 50px;
+	height: 50px;
+	font-size: 60px;
+	margin-top: 0;
+}
+
+
+@-webkit-keyframes shake {
+	0%{
+		-webkit-transform:translate(2px, 2px);
+	}
+	25%{
+		-webkit-transform:translate(-2px, -2px);
+	}
+	50%{
+		-webkit-transform:translate(0px, 0px);
+	}
+	75%{
+		-webkit-transform:translate(2px, -2px);
+	}
+	100%{
+		-webkit-transform:translate(-2px, 2px);
+	}
+}
+
+/*@keyframes shake {
+	0%{
+		transform:translate(2px, 2px);
+	}
+	25%{
+		transform:translate(-2px, -2px);
+	}
+	50%{
+		transform:translate(0px, 0px);
+	}
+	75%{
+		transform:translate(2px, -2px);
+	}
+	100%{
+		transform:translate(-2px, 2px);
+	}
+}*/
+
+
+.line3>div:hover{
+    -webkit-animation:shake 0.2s infinite;
+    animation:shake 0.2s infinite;
+}
+
+.line4{
+	border: 0 solid #DDD;
+	display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+}
+
+.line5{
+	border: 0 solid #DDD;
+	display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		color: #AAA;
+		font-size: 10px;
+		text-shadow: 2px 2px 9px #444;
+}
