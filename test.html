@@ -3,8 +3,137 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style>
+		#frame{
+			width: 1000px;
+			height: 700px;
+			margin: auto;
+			background-color: #0FF;
+			position: relative;
+		}
+
+		#sframe{
+			width: 1000px;
+			height: 700px;
+			background-color: #000;
+			left: 140px;
+			top: 8px;
+			z-index: 5;
+			position: absolute;
+
+			/*display:none;*/
+			/*visibility:hidden;*/
+		}
+
+		#innerframe{
+			width: 500px;
+			height: 300px;
+			border: 1px solid #fff;
+			background-color: #FF0;
+			border-color: #0FF;
+			position: absolute;
+			left: 370px ;
+			top: 230px;
+			z-index: 10;
+			color:#000;
+			/*display: inline-block;*/
+		}
+
+		#light{
+			position: absolute;
+			color: #000;
+			/*background-color: #FF0;*/
+			z-index: 15;
+			left: 540px ;
+			top: 350px;
+			font-size: 40px;
+		}
+
+		#btn{
+			width: 80px;
+			height: 30px;
+			border: 2px solid #000;
+			position: absolute;
+			background-color: #FFF;
+			/*margin-left: 460px ;
+			margin-top: 335px;*/
+			left: 580px ;
+			top: 360px;
+			padding-top: 5px;
+			padding-left: 5px;
+			z-index: 20;
+			/*display: inline-block;*/
+		}
+
+		#x{
+			width: 20px;
+			height: 20px;
+			border: 1px solid #fff;
+			position: absolute;
+			background-color: #FFF;
+			padding-top: 0;
+			padding-left: 9px;
+			left: 840px ;
+			top: 231px;
+			z-index: 20;
+		}
+
+	</style>
 </head>
 <body>
-	test
+	<div id="frame"></div>
+	
+	<div id="sframe"></div>
+	
+	<div id="innerframe"></div>
+	<div id="light">
+		我是燈箱!
+	</div>
+	<div id="btn">
+		Press Me
+	</div>
+	<div id="x">X</div>
+			
+		
+		
+	
+
+	<script
+  		src="https://code.jquery.com/jquery-3.4.1.min.js"
+  		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  		crossorigin="anonymous">
+  	</script>
+
+	<script>
+		//$(".innerframe").css("background-color","#0FF");
+		$("#sframe").hide();
+		$("#innerframe").hide();
+		$("#light").hide();
+		$("#x").hide();
+		//$("#btn").show();
+		
+
+		$("#btn").click(function(){
+  			/*$("#innerframe").fadeIn(6000).css("background-color","#FF0").css("border-color","#fff");
+  			$("#frame").fadeIn(6000).css("background-color","#000");*/
+  			$("#sframe").fadeIn(4000);
+  			$("#innerframe").fadeIn(4000);
+  			$("#light").fadeIn(4000);
+  			$("#x").fadeIn(4000);
+  			$("#btn").hide();
+  			//$("#innerframe").text("我是燈箱喔!");
+  			//$("#innerframe").fadeOut(6000);
+		});
+
+		$("#x").click(function(){
+
+  			$("#sframe").fadeOut(4000);
+  			$("#innerframe").fadeOut(4000);
+  			$("#light").fadeOut(4000);
+  			$("#x").fadeOut(4000);
+  			$("#btn").fadeIn(4000);
+  			//$("#innerframe").fadeOut(6000);
+		});
+	</script>
 </body>
 </html>
